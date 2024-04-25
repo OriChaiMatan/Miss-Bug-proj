@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "b101",
+        "title": "Cannot save a Car",
+        "severity": 3,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b102",
+        "title": "Cannot save a Car",
+        "severity": 5,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b103",
+        "title": "Cannot save a Car",
+        "severity": 1,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b104",
+        "title": "Cannot save a Car",
+        "severity": 11,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b105",
+        "title": "Cannot save a Car",
+        "severity": 9,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b106",
+        "title": "Cannot save a Car",
+        "severity": 7,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b107",
+        "title": "Cannot save a Car",
+        "severity": 21,
+        "createdAt": 1542107359454
+    }
+]

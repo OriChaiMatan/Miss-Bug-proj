@@ -1,0 +1,76 @@
+[
+    {
+        "_id": "b103",
+        "title": "Cannot save a Car",
+        "severity": 1,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b104",
+        "title": "Cannot save a Car",
+        "severity": 11,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b105",
+        "title": "Cannot save a Car",
+        "severity": 9,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b106",
+        "title": "Cannot save a Car",
+        "severity": 7,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "b107",
+        "title": "Bug22",
+        "severity": "3",
+        "editAt": 1713708420927
+    },
+    {
+        "_id": "tInecZ",
+        "title": "Bug33",
+        "severity": "8",
+        "createdAt": 1713707531558
+    },
+    {
+        "_id": "K5feQA",
+        "title": "Bug3444444443",
+        "severity": "5555",
+        "description": "",
+        "editAt": 1713715413463
+    },
+    {
+        "_id": "rZCKIT",
+        "title": "bug123",
+        "severity": "300",
+        "createdAt": 1713713915832
+    },
+    {
+        "_id": "Ed35Za",
+        "title": "test",
+        "severity": "55555",
+        "createdAt": 1713714021196
+    },
+    {
+        "_id": "w5oson",
+        "title": "test1",
+        "severity": "4444444",
+        "editAt": 1713714085039
+    },
+    {
+        "_id": "O0z5xC",
+        "title": "3",
+        "severity": "3",
+        "createdAt": 1713714415561
+    },
+    {
+        "_id": "aaxKjY",
+        "title": "23232323",
+        "severity": "222",
+        "description": "2.222222222222222e 37",
+        "createdAt": 1713714502543
+    }
+]
