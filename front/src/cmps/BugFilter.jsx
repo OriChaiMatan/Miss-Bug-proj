@@ -35,24 +35,18 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
         onSetFilterBy(filterByToEdit)
     }
 
-    // function handleTxtChange({ target }) {
-    //     const value = target.value
-    //     setFilterByToEdit(prevFilter => ({ ...prevFilter, txt: value }))
-    // }
 
-    // function handleMinSpeedChange({ target }) {
-    //     const value = target.value
-    //     setFilterByToEdit(prevFilter => ({ ...prevFilter, minSpeed: value }))
-    // }
-
-
-    const { txt, minSpeed } = filterByToEdit
+    const { txt, severity } = filterByToEdit
     return (
-        <section className="car-filter">
+        <section className="bug-filter">
             <h2>Filter Our Bugs</h2>
             <form onSubmit={onSubmitFilter}>
                 <label htmlFor="txt">Title: </label>
                 <input value={txt} onChange={handleChange} type="text" placeholder="By title" id="txt" name="txt" />
+
+                <label htmlFor="severity">Severity: </label>
+                <input value={severity} onChange={handleChange} type="number" placeholder="By severity" id="severity" name="severity" />
+
 
                 <button>Set Filter</button>
             </form>

@@ -23,6 +23,9 @@ async function query(filterBy = {}) {
         const regExp = new RegExp(filterBy.txt, 'i')
         bugs = bugs.filter(bug => regExp.test(bug.title))
     }
+    if (filterBy.severity) {
+        bugs = bugs.filter(bug => bug.severity >= filterBy.severity)
+    }
     return bugs
 }
 async function getById(bugId) {
@@ -45,5 +48,5 @@ async function save(bug) {
 }
 
 function getDefaultFilter() {
-    return { txt: '' }
+    return { txt: '', severity: '' }
 }
