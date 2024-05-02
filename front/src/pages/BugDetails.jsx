@@ -18,7 +18,7 @@ export function BugDetails() {
 
     async function loadBug() {
         try {
-            const bug = await bugService.getById(bugId)
+            const bug = await bugService.get(bugId)
             setBug(bug)
         } catch (err) {
             showErrorMsg('Cannot load bug')

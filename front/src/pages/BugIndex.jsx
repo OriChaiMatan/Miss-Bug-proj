@@ -1,22 +1,28 @@
+import { useCallback, useEffect, useState } from 'react'
 import { bugService } from '../services/bug.service.js'
+import { utilService } from '../services/util.service.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { BugList } from '../cmps/BugList.jsx'
 import { BugFilter } from '../cmps/BugFilter.jsx'
-import { useState } from 'react'
-import { useEffect } from 'react'
 
 
 export function BugIndex() {
   const [bugs, setBugs] = useState([])
   const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
 
+  const debouncedSetFilterBy = useCallback(utilService.debounce(onSetFilterBy, 1000), [])
+
   useEffect(() => {
-    loadBugs()
+    fetchData()
   }, [filterBy])
 
-  async function loadBugs() {
-    const bugs = await bugService.query(filterBy)
-    setBugs(bugs)
+  async function fetchData() {
+    try {
+      const bugs = await bugService.query(filterBy)
+      setBugs(bugs)
+    } catch (err) {
+      console.log('err:', err)
+    }
   }
 
   async function onRemoveBug(bugId) {
@@ -73,7 +79,7 @@ export function BugIndex() {
     <main className="bug-index">
       <h3>Bugs App</h3>
       <main>
-        <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
+        <BugFilter filterBy={filterBy} onSetFilterBy={debouncedSetFilterBy} />
         <button className='add-btn' onClick={onAddBug}>Add Bug ⛐</button>
         <BugList bugs={bugs} onRemoveBug={onRemoveBug} onEditBug={onEditBug} />
       </main>

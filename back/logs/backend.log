@@ -38,3 +38,18 @@
 25.4.2024, 19:39:16 - INFO - Server listening on port http://127.0.0.1:3030/
 25.4.2024, 19:43:45 - INFO - Server listening on port http://127.0.0.1:3030/
 2.5.2024, 17:21:46 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 18:16:16 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 18:26:27 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 19:04:13 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 19:04:17 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 19:04:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 19:06:45 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:05:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:10:55 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:13:08 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:17:31 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:18:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.5.2024, 20:18:59 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
+2.5.2024, 20:20:31 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
+2.5.2024, 20:20:32 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
+2.5.2024, 20:22:25 - ERROR - Could'nt save bug | ReferenceError: cars is not defined
