@@ -1,0 +1,98 @@
+[
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 2,
+        "createdAt": 1542107359454,
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "def456",
+        "title": "Title Does Not Match Issue",
+        "description": "The issue described does not match the title provided.",
+        "severity": 1,
+        "createdAt": 1542107359454,
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "jkl012",
+        "title": "Data Loss Upon Save",
+        "description": "Saving data results in loss of previous data or unexpected behavior.",
+        "severity": 2,
+        "createdAt": 1542107359454,
+        "labels": [
+            "need-CR"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "severity": 33,
+        "description": "The 'Save' button is not present where expected.",
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "pqr678",
+        "title": "Incorrect Data Saved",
+        "description": "Data saved does not match what was entered or expected.",
+        "severity": 3,
+        "createdAt": 1542107359454,
+        "labels": [
+            "critical",
+            "need-CR"
+        ]
+    },
+    {
+        "_id": "stu901",
+        "title": "Server Error During Save",
+        "description": "Encountered a server error when attempting to save.",
+        "severity": 1,
+        "createdAt": 1542107359454,
+        "labels": [
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "vwx234",
+        "title": "Delay in Saving Data",
+        "description": "Significant delay observed between clicking 'Save' and data actually being saved.",
+        "severity": 2,
+        "createdAt": 1542107359454,
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "yza567",
+        "title": "Incomplete Data Saved",
+        "description": "Only partial data is saved, leading to missing or corrupted information.",
+        "severity": 3,
+        "createdAt": 1542107359454,
+        "labels": [
+            "critical",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "bcd890",
+        "title": "Permissions Denied on Save",
+        "description": "Users encounter permission errors when attempting to save data.",
+        "severity": 1,
+        "createdAt": 1542107359454,
+        "labels": [
+            "critical",
+            "need-CR"
+        ]
+    }
+]

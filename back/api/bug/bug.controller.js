@@ -1,5 +1,4 @@
 import { bugService } from "./bug.service.js"
-import { loggerService } from "../../services/logger.service.js"
 
 export async function getBugs(req, res){
     const { txt, severity, description, labels, pageIdx } = req.query
@@ -17,7 +16,12 @@ export async function getBugs(req, res){
 export async function getBug(req, res) {
     try {
         const bugId = req.params.bugId
-        console.log('bugId:', bugId)
+        // console.log('bugId:', bugId)
+        let visitedBugs = req.cookies.visitedBugs || []
+        if (visitedBugs.length > 2) return res.status(401).send('Wait for a bit');
+        if (!visitedBugs.includes(bugId)) visitedBugs.push(bugId) 
+        res.cookie('visitedBugs', visitedBugs, { maxAge: 7 * 1000 })
+
         const bug = await bugService.getById(bugId)
         console.log('bug:', bug)
         res.send(bug)

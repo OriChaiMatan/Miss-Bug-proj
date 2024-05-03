@@ -53,3 +53,20 @@
 2.5.2024, 20:20:31 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
 2.5.2024, 20:20:32 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
 2.5.2024, 20:22:25 - ERROR - Could'nt save bug | ReferenceError: cars is not defined
+3.5.2024, 16:45:33 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 16:46:59 - ERROR - Could'nt get bugs | TypeError: Assignment to constant variable.
+3.5.2024, 16:49:17 - ERROR - Could'nt save bug | ReferenceError: cars is not defined
+3.5.2024, 16:55:21 - ERROR - Could'nt remove bug | ReferenceError: cars is not defined
+3.5.2024, 16:58:03 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 16:59:43 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 16:59:45 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:15:54 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:20:10 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:20:41 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:21:08 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:25:20 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:25:54 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:27:09 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:27:54 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:32:17 - INFO - Server listening on port http://127.0.0.1:3030/
+3.5.2024, 17:32:53 - INFO - Server listening on port http://127.0.0.1:3030/

@@ -49,7 +49,7 @@ async function getById(bugId) {
 async function remove(bugId) {
     try {
         const bugIdx = bugs.findIndex(bug => bug._id === bugId)
-        cars.splice(bugIdx, 1)
+        bugs.splice(bugIdx, 1)
         _saveBugsToFile()
     } catch (error) {
         throw error
@@ -77,7 +77,7 @@ async function save(bugToSave) {
 
 function _saveBugsToFile(path = './data/bug.json') {
     return new Promise((resolve, reject) => {
-        const data = JSON.stringify(cars, null, 4)
+        const data = JSON.stringify(bugs, null, 4)
         fs.writeFile(path, data, (err) => {
             if (err) return reject(err)
             resolve()
