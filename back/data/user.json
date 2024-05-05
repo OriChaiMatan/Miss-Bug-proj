@@ -80,5 +80,12 @@
         "password": "33333e",
         "score": 566,
         "_id": "DY7OLd"
+    },
+    {
+        "_id": "k75a1l",
+        "fullname": "Ori Chai Matan",
+        "username": "ori_chaimatan",
+        "password": "111111",
+        "score": 1234321
     }
 ]
