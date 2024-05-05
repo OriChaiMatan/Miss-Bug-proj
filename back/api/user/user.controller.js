@@ -34,8 +34,8 @@ export async function removeUser(req, res) {
 }
 
 export async function updateUser(req, res){
-    const { _id, username, password } = req.body 
-    let userToSave = { _id, username, password }
+    const { _id, fullname, username, password, score } = req.body 
+    let userToSave = { _id, fullname, username, password, score }
 
     try {
         userToSave = await userService.save(userToSave)
@@ -47,8 +47,8 @@ export async function updateUser(req, res){
 }
 
 export async function addUser(req, res){
-    const { fullname, username, password } = req.body 
-    let userToSave = { fullname, username, password }
+    const { fullname, username, password, score } = req.body 
+    let userToSave = { fullname, username, password, score }
     try {
         userToSave = await userService.save(userToSave)
         res.send(userToSave)

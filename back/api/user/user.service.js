@@ -60,7 +60,7 @@ async function save(userToSave) {
 
 function _saveUsersToFile(path = './data/user.json') {
     return new Promise((resolve, reject) => {
-        const data = JSON.stringify(bugs, null, 4)
+        const data = JSON.stringify(users, null, 4)
         fs.writeFile(path, data, (err) => {
             if (err) return reject(err)
             resolve()
