@@ -45,5 +45,5 @@ async function save(bug) {
 }
 
 function getDefaultFilter() {
-    return { txt: '', severity: '' }
+    return { title: '', severity: '' }
 }

@@ -1,8 +1,8 @@
 import { bugService } from "./bug.service.js"
 
 export async function getBugs(req, res){
-    const { txt, severity, description, labels, pageIdx } = req.query
-    const filterBy = { txt, severity, description, labels, pageIdx }
+    const { title, severity, description, labels, pageIdx } = req.query
+    const filterBy = { title, severity, description, labels, pageIdx }
 
     try {
         const bugs = await bugService.query(filterBy)
@@ -43,8 +43,8 @@ export async function removeBug(req, res) {
 }
 
 export async function updateBug(req, res){
-    const { _id, txt, severity, description, labels } = req.body 
-    let bugToSave = { _id, txt, severity: +severity, description, labels }
+    const { _id, title, severity, description, labels } = req.body 
+    let bugToSave = { _id, title, severity: +severity, description, labels }
 
     try {
         bugToSave = await bugService.save(bugToSave)
@@ -56,8 +56,8 @@ export async function updateBug(req, res){
 }
 
 export async function addBug(req, res){
-    const { txt, severity, description, labels } = req.body 
-    let bugToSave = { txt, severity: +severity, description, labels }
+    const { title, severity, description, labels } = req.body 
+    let bugToSave = { title, severity: +severity, description, labels }
     try {
         bugToSave = await bugService.save(bugToSave)
         res.send(bugToSave)

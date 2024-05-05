@@ -15,17 +15,20 @@ async function query(filterBy = {}) {
     let filteredBugs = [...bugs]
 
     try {
-        if (filterBy.txt) {
-                const regExp = new RegExp(filterBy.txt, 'i')
-                bugs = bugs.filter(bug => regExp.test(bug.title))
-            }
+        if (filterBy.title) {
+            const regExp = new RegExp(filterBy.title, 'i')
+            filteredBugs = filteredBugs.filter(bug => regExp.test(bug.title))
+        }
         if (filterBy.severity) {
             filteredBugs = filteredBugs.filter(bug => bug.severity >= filterBy.severity)
+        }
+        if (filterBy.label && filterBy.label !== 'all') { 
+            filteredBugs = filteredBugs.filter(bug => bug.labels.includes(filterBy.label))
         }
 
         // Sort would come here
 
-        if(filterBy.pageIdx !== undefined) {
+        if (filterBy.pageIdx !== undefined) {
             const startIdx = filterBy.pageIdx * PAGE_SIZE
             filteredBugs = filteredBugs.slice(startIdx, startIdx + PAGE_SIZE)
         }
@@ -75,7 +78,7 @@ async function save(bugToSave) {
 }
 
 
-function _saveBugsToFile(path = './data/bug.json') {
+function _saveBugsToFile(path = './data/bugs.json') {
     return new Promise((resolve, reject) => {
         const data = JSON.stringify(bugs, null, 4)
         fs.writeFile(path, data, (err) => {
