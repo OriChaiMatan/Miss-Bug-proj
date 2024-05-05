@@ -28,18 +28,11 @@
         "score": 80
     },
     {
-        "_id": "u105",
-        "fullname": "Emily Brown",
-        "username": "emilyb",
-        "password": "emily456",
-        "score": 120
-    },
-    {
         "_id": "u106",
         "fullname": "Chris Evans",
         "username": "cevans",
         "password": "cevans123",
-        "score": 105
+        "score": 100
     },
     {
         "_id": "u107",
@@ -67,13 +60,7 @@
         "fullname": "Michael Davis",
         "username": "mike_d",
         "password": "mike456",
-        "score": 85
-    },
-    {
-        "fullname": "Ori Chai Matan",
-        "username": null,
-        "password": "1234",
-        "_id": "jqhE6W"
+        "score": 300
     },
     {
         "fullname": "Nir chai matan",

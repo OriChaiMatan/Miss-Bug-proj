@@ -51,13 +51,13 @@ export function UserIndex() {
   }
 
   async function onEditUser(user) {
-    const username = +prompt('New username?')
-    const userToSave = { ...user, username }
+    const score = +prompt('New score?')
+    const userToSave = { ...user, score }
     try {
 
       const savedUser = await userService.save(userToSave)
       console.log('Updated user:', savedUser)
-      setBugs(prevUsers => prevUsers.map((currUser) =>
+      setUsers(prevUsers => prevUsers.map((currUser) =>
         currUser._id === savedUser._id ? savedUser : currUser
       ))
       showSuccessMsg('User updated')
