@@ -15,7 +15,6 @@ async function query(filterBy = {}) {
     let filteredBugs = [...bugs]
     try {
         if (filterBy.label) { 
-            console.log()
             filteredBugs = filteredBugs.filter(bug => bug.labels.includes(filterBy.label))
         }
         if (filterBy.title) {

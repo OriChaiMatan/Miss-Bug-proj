@@ -11,8 +11,10 @@ const corsOptions = {
     origin: [
         'http://127.0.0.1:5173',
         'http://127.0.0.1:3000',
+        'http://127.0.0.1:3030',
         'http://localhost:5173',
-        'http://localhost:3000'
+        'http://localhost:3000',
+        'http://localhost:3030'
     ],
     credentials: true
 }
@@ -30,14 +32,14 @@ app.use('/api/user', userRoutes)
 
 app.get('/', (req, res) => res.send('Hello'))
 
-// app.get('/**', (req, res) => {
-// 	res.sendFile(path.resolve('public/index.html'))
-// })
-
 app.get('/**', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
-  })
-  
+	res.sendFile(path.resolve('public/index.html'))
+})
+
+// app.get('/**', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'))
+//   })
+
 const port = 3030
 app.listen(port, () =>
     loggerService.info(`Server listening on port http://127.0.0.1:${port}/`)
