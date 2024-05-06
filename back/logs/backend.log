@@ -108,3 +108,66 @@
 5.5.2024, 20:44:27 - INFO - Server listening on port http://127.0.0.1:3030/
 5.5.2024, 20:44:56 - INFO - Server listening on port http://127.0.0.1:3030/
 5.5.2024, 20:45:24 - INFO - Server listening on port http://127.0.0.1:3030/
+5.5.2024, 20:59:26 - INFO - Server listening on port http://127.0.0.1:3030/
+5.5.2024, 21:00:02 - INFO - Server listening on port http://127.0.0.1:3030/
+5.5.2024, 21:00:43 - INFO - Server listening on port http://127.0.0.1:3030/
+5.5.2024, 21:17:22 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:09:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:14:48 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:21:50 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:22:39 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:23:30 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:24:15 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:24:24 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:24:45 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:50:45 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:51:14 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:51:17 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:51:20 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:51:55 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 17:52:32 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 17:52:58 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:01:27 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:02:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:02:25 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:04:19 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:04:24 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:05:27 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:05:42 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:05:52 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:07:15 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:09:58 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:10:04 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:11:35 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:11:39 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:11:58 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:12:07 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:13:20 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:13:23 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:13:24 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:13:27 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:13:42 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:14:40 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:14:45 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:15:16 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:15:25 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:15:31 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:15:51 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:17:22 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:17:29 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:19:33 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:21:17 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:21:57 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:22:04 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:22:44 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:23:45 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:23:51 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:25:11 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:25:40 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:26:33 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:26:57 - ERROR - Could'nt get bugs | TypeError: Cannot read properties of undefined (reading 'includes')
+6.5.2024, 18:28:34 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:29:26 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:29:49 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:31:12 - INFO - Server listening on port http://127.0.0.1:3030/
+6.5.2024, 18:31:34 - INFO - Server listening on port http://127.0.0.1:3030/

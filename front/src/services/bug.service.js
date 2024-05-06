@@ -18,13 +18,6 @@ export const bugService = {
 
 async function query(filterBy = {}) {
     let { data: bugs } = await axios.get(BASE_URL, { params: filterBy })
-    // if (filterBy.txt) {
-    //     const regExp = new RegExp(filterBy.txt, 'i')
-    //     bugs = bugs.filter(bug => regExp.test(bug.title))
-    // }
-    // if (filterBy.severity) {
-    //     bugs = bugs.filter(bug => bug.severity >= filterBy.severity)
-    // }
     return bugs
 }
 async function get(bugId) {
@@ -45,5 +38,5 @@ async function save(bug) {
 }
 
 function getDefaultFilter() {
-    return { title: '', severity: '' }
+    return { title: '', severity: '', label: '', sortBy: '' }
 }

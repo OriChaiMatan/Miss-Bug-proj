@@ -12,27 +12,24 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
     function handleChange({ target }) {
         const field = target.name
         let value = target.value
-    
+
         switch (target.type) {
             case 'number':
             case 'range':
                 value = +value || ''
                 break;
-    
+
             case 'checkbox':
                 value = target.checked
                 break
-    
+
             default:
                 break;
         }
-    
-        setFilterByToEdit(prevFilter => {
-            console.log("filterby",{ ...prevFilter, [field]: value })
-            return { ...prevFilter, [field]: value }
-        });
+
+        setFilterByToEdit(prevFilter => ({ ...prevFilter, [field]: value }))
     }
-    
+
 
 
     function onSubmitFilter(ev) {
@@ -41,7 +38,7 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
     }
 
 
-    const { title, severity, label, sortBy, sortDir } = filterByToEdit
+    const { title, severity, label, sortBy } = filterByToEdit
     return (
         <section className="bug-filter">
             <h2>Filter Our Bugs</h2>
@@ -59,21 +56,17 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
                     <option value="need-CR">Need-CR</option>
                     <option value="dev-branch">Dev-branch</option>
                 </select>
-
-                {/* <label htmlFor="sortBy">Sort By: </label>
-                <select value={sortBy} onChange={handleChange} id="sortBy" name="sortBy">
-                    <option value="title">Title</option>
-                    <option value="severity">Severity</option>
-                    <option value="createdAt">Created At</option>
-                </select>
-
-                <label htmlFor="sortDir">Sort Direction: </label>
-                <select value={sortDir} onChange={handleChange} id="sortDir" name="sortDir">
-                    <option value="1">Ascending</option>
-                    <option value="-1">Descending</option>
-                </select> */}
-
                 <button>Set Filter</button>
+
+                <div className="sortBy">
+                    <label htmlFor="sortBy">Sort By: </label>
+                    <select value={sortBy} onChange={handleChange} id="sortBy" name="sortBy">
+                        <option value="">Sort By</option>
+                        <option value="Title">Title</option>
+                        <option value="Severity">Severity</option>
+                        <option value="CreatedAt">CreatedAt</option>
+                    </select>
+                </div>
             </form>
         </section>
     )

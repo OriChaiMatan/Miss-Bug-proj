@@ -13,8 +13,11 @@ export const bugService = {
 
 async function query(filterBy = {}) {
     let filteredBugs = [...bugs]
-
     try {
+        if (filterBy.label) { 
+            console.log()
+            filteredBugs = filteredBugs.filter(bug => bug.labels.includes(filterBy.label))
+        }
         if (filterBy.title) {
             const regExp = new RegExp(filterBy.title, 'i')
             filteredBugs = filteredBugs.filter(bug => regExp.test(bug.title))
@@ -22,16 +25,28 @@ async function query(filterBy = {}) {
         if (filterBy.severity) {
             filteredBugs = filteredBugs.filter(bug => bug.severity >= filterBy.severity)
         }
-        if (filterBy.label && filterBy.label !== 'all') { 
-            filteredBugs = filteredBugs.filter(bug => bug.labels.includes(filterBy.label))
-        }
+    
 
         // Sort would come here
+        if (filterBy.sortBy) {
+            if (filterBy.sortBy === 'Title') {
+              filteredBugs.sort((a, b) => a.title.localeCompare(b.title))
+            } else if (filterBy.sortBy === 'Severity') {
+              filteredBugs.sort((a, b) => a.severity - b.severity)
+            } else if (filterBy.sortBy === 'CreatedAt') {
+              if (filterBy.sortDir === '-1') {
+                filteredBugs.sort((a, b) => b.createdAt - a.createdAt)
+              } else {
+                filteredBugs.sort((a, b) => a.createdAt - b.createdAt)
+              }
+            }
+        }
 
         if (filterBy.pageIdx !== undefined) {
             const startIdx = filterBy.pageIdx * PAGE_SIZE
             filteredBugs = filteredBugs.slice(startIdx, startIdx + PAGE_SIZE)
         }
+        
 
         return filteredBugs
     } catch (error) {

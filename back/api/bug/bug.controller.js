@@ -1,8 +1,9 @@
 import { bugService } from "./bug.service.js"
+import { loggerService } from "../../services/logger.service.js"
 
 export async function getBugs(req, res){
-    const { title, severity, description, labels, pageIdx } = req.query
-    const filterBy = { title, severity, description, labels, pageIdx }
+    const { title, severity, label, pageIdx, sortBy } = req.query
+    const filterBy = { title, severity: +severity, label, pageIdx, sortBy }
 
     try {
         const bugs = await bugService.query(filterBy)
