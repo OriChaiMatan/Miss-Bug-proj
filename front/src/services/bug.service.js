@@ -4,7 +4,8 @@ var axios = Axios.create({
     withCredentials: true
 })
 
-const BASE_URL = 'http://localhost:3030/api/bug/'
+// const BASE_URL = 'http://localhost:3030/api/bug/'
+const BASE_URL = (process.env.NODE_ENV == 'production') ? '/api/bug/' : 'http://localhost:3030/api/bug/'
 const STORAGE_KEY = 'bugDB'
 
 export const bugService = {

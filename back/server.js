@@ -30,10 +30,14 @@ app.use('/api/user', userRoutes)
 
 app.get('/', (req, res) => res.send('Hello'))
 
-app.get('/**', (req, res) => {
-	res.sendFile(path.resolve('public/index.html'))
-})
+// app.get('/**', (req, res) => {
+// 	res.sendFile(path.resolve('public/index.html'))
+// })
 
+app.get('/**', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+  })
+  
 const port = 3030
 app.listen(port, () =>
     loggerService.info(`Server listening on port http://127.0.0.1:${port}/`)
