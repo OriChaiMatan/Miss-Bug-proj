@@ -23,6 +23,11 @@ a.active {
     text-decoration: underline;
 }
 
+.login-signup-container{
+    display: flex;
+    gap: 15px;
+}
+
 
 @media (max-width: 720px) {
     .app-header {

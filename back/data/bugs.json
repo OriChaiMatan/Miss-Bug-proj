@@ -5,6 +5,10 @@
         "description": "The _id 'abc123' already exists in the database.",
         "severity": 2,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "critical",
             "need-CR",
@@ -17,6 +21,10 @@
         "description": "The issue described does not match the title provided.",
         "severity": 1,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "need-CR",
             "dev-branch"
@@ -28,6 +36,10 @@
         "description": "The 'Save' button does not perform the save action when clicked.",
         "severity": 3,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "critical",
             "dev-branch"
@@ -39,6 +51,10 @@
         "description": "Saving data results in loss of previous data or unexpected behavior.",
         "severity": 2,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "need-CR"
         ]
@@ -49,6 +65,10 @@
         "description": "The 'Save' button is not present where expected.",
         "severity": 2,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "need-CR",
             "dev-branch"
@@ -60,6 +80,10 @@
         "description": "Data saved does not match what was entered or expected.",
         "severity": 3,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "critical",
             "need-CR"
@@ -71,6 +95,10 @@
         "description": "Encountered a server error when attempting to save.",
         "severity": 1,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "dev-branch"
         ]
@@ -81,31 +109,13 @@
         "description": "Significant delay observed between clicking 'Save' and data actually being saved.",
         "severity": 2,
         "createdAt": 1542107359454,
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        },
         "labels": [
             "need-CR",
             "dev-branch"
-        ]
-    },
-    {
-        "_id": "yza567",
-        "title": "Incomplete Data Saved",
-        "description": "Only partial data is saved, leading to missing or corrupted information.",
-        "severity": 3,
-        "createdAt": 1542107359454,
-        "labels": [
-            "critical",
-            "dev-branch"
-        ]
-    },
-    {
-        "_id": "bcd890",
-        "title": "Permissions Denied on Save",
-        "description": "Users encounter permission errors when attempting to save data.",
-        "severity": 1,
-        "createdAt": 1542107359454,
-        "labels": [
-            "critical",
-            "need-CR"
         ]
     }
 ]

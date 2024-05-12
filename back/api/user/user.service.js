@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { utilService } from "../../services/util.service.js"
+import { loggerService } from '../../services/logger.service.js'
 
 const PAGE_SIZE = 2
 const users = utilService.readJsonFile('data/user.json')
@@ -8,7 +9,8 @@ export const userService = {
     query,
     getById,
     remove,
-    save
+    save,
+    getByUsername
 }
 
 async function query() {
@@ -22,38 +24,45 @@ async function query() {
 async function getById(userId) {
     try {
         const user = users.find(user => user._id === userId)
+        if (!user) throw `User not found by userId : ${userId}`
         return user
-    } catch (error) {
-        throw error
+    } catch (err) {
+        loggerService.error('userService[getById] : ', err)
+        throw err
     }
 }
 
+async function getByUsername(username) {
+    const user = users.find(user => user.username === username)
+    return user
+}
 
 async function remove(userId) {
     try {
-        const userIdx = users.findIndex(user => user._id === userId)
-        users.splice(userIdx, 1)
-        _saveUsersToFile()
-    } catch (error) {
-        throw error
+        const idx = users.findIndex(user => user._id === userId)
+        if (idx === -1) throw `Couldn't find user with _id ${causerIdrId}`
+
+        users.splice(idx, 1)
+        await _saveUsersToFile()
+    } catch (err) {
+        loggerService.error('userService[remove] : ', err)
+        throw err
     }
 }
 
 
-async function save(userToSave) {
+async function save(user) {
     try {
-        if (userToSave._id) {
-            const idx = users.findIndex(user => user._id === userToSave._id)
-            if (idx < 0) throw `Cant find user with _id ${userToSave._id}`
-            users[idx] = userToSave
-        } else {
-            userToSave._id = utilService.makeId()
-            users.push(userToSave)
-        }
+        // Only handles user ADD for now
+        user._id = utilService.makeId()
+        user.score = 10000
+        user.createdAt = Date.now()
+        users.push(user)
         await _saveUsersToFile()
-        return userToSave
-    } catch (error) {
-        throw error
+        return user
+    } catch (err) {
+        loggerService.error('userService[save] : ', err)
+        throw err
     }
 }
 

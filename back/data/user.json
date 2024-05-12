@@ -4,82 +4,63 @@
         "fullname": "Muki Ja",
         "username": "muki",
         "password": "muki1234",
-        "score": 100
+        "score": 1000
     },
     {
         "_id": "u102",
         "fullname": "John Doe",
         "username": "john_doe",
         "password": "john123",
-        "score": 95
+        "score": 1000
     },
     {
         "_id": "u103",
         "fullname": "Alice Smith",
         "username": "alice_s",
         "password": "alice456",
-        "score": 110
+        "score": 1000
     },
     {
         "_id": "u104",
         "fullname": "Bob Johnson",
         "username": "bobby",
         "password": "bob123",
-        "score": 80
+        "score": 1000
     },
     {
         "_id": "u106",
         "fullname": "Chris Evans",
         "username": "cevans",
         "password": "cevans123",
-        "score": 100
+        "score": 1000
     },
     {
         "_id": "u107",
         "fullname": "Sophia Lee",
         "username": "sophia_lee",
         "password": "sophia123",
-        "score": 115
+        "score": 1000
     },
     {
         "_id": "u108",
         "fullname": "David Clark",
         "username": "dave_c",
         "password": "dave456",
-        "score": 90
+        "score": 1000
     },
     {
         "_id": "u109",
         "fullname": "Emma Watson",
         "username": "emma_w",
         "password": "emma123",
-        "score": 100
+        "score": 1000
     },
     {
         "_id": "u110",
         "fullname": "Michael Davis",
         "username": "mike_d",
         "password": "mike456",
-        "score": 300
-    },
-    {
-        "fullname": "Nir chai matan",
-        "username": "NIRORI",
-        "password": "123",
-        "_id": "qyKeBQ"
-    },
-    {
-        "fullname": "errr",
-        "username": "wer",
-        "password": "234",
-        "_id": "1eg1iC"
-    },
-    {
-        "fullname": "qwer",
-        "username": "eeeeeeeee",
-        "password": "33333e",
-        "score": 566,
-        "_id": "DY7OLd"
+        "score": 1000
     },
     {
         "_id": "k75a1l",

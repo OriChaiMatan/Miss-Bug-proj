@@ -11,6 +11,18 @@ import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { UserMsg } from './cmps/UserMsg.jsx'
 
 export function App() {
+
+    function RouteGuard({ children }) {
+        const loggedinUser = userService.getLoggedinUser()
+
+        function isAllowed() {
+            return loggedinUser?.isAdmin
+        }
+
+        if (!isAllowed()) return <Navigate to="/" />
+        return children
+    }
+
     return (
         <Router>
             <div className='main-app'>
@@ -22,7 +34,10 @@ export function App() {
                         <Route path='/user/:userId' element={<UserDetails />} />
                         <Route path='/bug' element={<BugIndex />} />
                         <Route path='/bug/:bugId' element={<BugDetails />} />
-                        <Route path='/about' element={<AboutUs />} />
+                        <Route path='/about' element={
+                            <RouteGuard >
+                                <AboutUs />
+                            </RouteGuard>} />
                     </Routes>
                 </main>
                 <AppFooter />
