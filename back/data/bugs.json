@@ -5,7 +5,7 @@
         "description": "The _id 'abc123' already exists in the database.",
         "severity": 2,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -21,7 +21,7 @@
         "description": "The issue described does not match the title provided.",
         "severity": 1,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -36,7 +36,7 @@
         "description": "The 'Save' button does not perform the save action when clicked.",
         "severity": 3,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -51,7 +51,7 @@
         "description": "Saving data results in loss of previous data or unexpected behavior.",
         "severity": 2,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -65,7 +65,7 @@
         "description": "The 'Save' button is not present where expected.",
         "severity": 2,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -80,7 +80,7 @@
         "description": "Data saved does not match what was entered or expected.",
         "severity": 3,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -95,7 +95,7 @@
         "description": "Encountered a server error when attempting to save.",
         "severity": 1,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },
@@ -109,7 +109,7 @@
         "description": "Significant delay observed between clicking 'Save' and data actually being saved.",
         "severity": 2,
         "createdAt": 1542107359454,
-        "creator": {
+        "owner": {
             "_id": "u101",
             "fullname": "Puki Ja"
         },

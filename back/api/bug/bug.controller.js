@@ -1,4 +1,5 @@
 import { bugService } from "./bug.service.js"
+import { authService } from './../auth/auth.service.js'
 import { loggerService } from "../../services/logger.service.js"
 
 export async function getBugs(req, res){
@@ -6,6 +7,7 @@ export async function getBugs(req, res){
     const filterBy = { title, severity: +severity, label, pageIdx, sortBy }
 
     try {
+        const loggedinUser = authService.validateToken(req.cookies.loginToken)
         const bugs = await bugService.query(filterBy)
         res.send(bugs)
     } catch (error) {
