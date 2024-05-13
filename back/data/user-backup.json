@@ -1,73 +1,121 @@
 [
-    {
-      "_id": "u101",
-      "fullname": "Muki Ja",
-      "username": "muki",
-      "password": "muki1234",
-      "score": 100
-    },
-    {
-      "_id": "u102",
-      "fullname": "John Doe",
-      "username": "john_doe",
-      "password": "john123",
-      "score": 95
-    },
-    {
-      "_id": "u103",
-      "fullname": "Alice Smith",
-      "username": "alice_s",
-      "password": "alice456",
-      "score": 110
-    },
-    {
-      "_id": "u104",
-      "fullname": "Bob Johnson",
-      "username": "bobby",
-      "password": "bob123",
-      "score": 80
-    },
-    {
-      "_id": "u105",
-      "fullname": "Emily Brown",
-      "username": "emilyb",
-      "password": "emily456",
-      "score": 120
-    },
-    {
-      "_id": "u106",
-      "fullname": "Chris Evans",
-      "username": "cevans",
-      "password": "cevans123",
-      "score": 105
-    },
-    {
-      "_id": "u107",
-      "fullname": "Sophia Lee",
-      "username": "sophia_lee",
-      "password": "sophia123",
-      "score": 115
-    },
-    {
-      "_id": "u108",
-      "fullname": "David Clark",
-      "username": "dave_c",
-      "password": "dave456",
-      "score": 90
-    },
-    {
-      "_id": "u109",
-      "fullname": "Emma Watson",
-      "username": "emma_w",
-      "password": "emma123",
-      "score": 100
-    },
-    {
-      "_id": "u110",
-      "fullname": "Michael Davis",
-      "username": "mike_d",
-      "password": "mike456",
-      "score": 85
-    }
-  ]
-  
+  {
+      "_id": "abc123",
+      "title": "Duplicate ID Detected",
+      "description": "The _id 'abc123' already exists in the database.",
+      "severity": 2,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u101",
+          "fullname": "Muki Ja"
+      },
+      "labels": [
+          "critical",
+          "need-CR",
+          "dev-branch"
+      ]
+  },
+  {
+      "_id": "def456",
+      "title": "Title Does Not Match Issue",
+      "description": "The issue described does not match the title provided.",
+      "severity": 1,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u101",
+          "fullname": "Muki Ja"
+      },
+      "labels": [
+          "need-CR",
+          "dev-branch"
+      ]
+  },
+  {
+      "_id": "ghi789",
+      "title": "Save Button Not Functioning",
+      "description": "The 'Save' button does not perform the save action when clicked.",
+      "severity": 3,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u102",
+          "fullname": "John Doe"
+      },
+      "labels": [
+          "critical",
+          "dev-branch"
+      ]
+  },
+  {
+      "_id": "jkl012",
+      "title": "Data Loss Upon Save",
+      "description": "Saving data results in loss of previous data or unexpected behavior.",
+      "severity": 2,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u108",
+          "fullname": "David Clark"
+      },
+      "labels": [
+          "need-CR"
+      ]
+  },
+  {
+      "_id": "mno345",
+      "title": "Save Button Missing",
+      "description": "The 'Save' button is not present where expected.",
+      "severity": 2,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u108",
+          "fullname": "David Clark"
+      },
+      "labels": [
+          "need-CR",
+          "dev-branch"
+      ]
+  },
+  {
+      "_id": "pqr678",
+      "title": "Incorrect Data Saved",
+      "description": "Data saved does not match what was entered or expected.",
+      "severity": 3,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "u108",
+          "fullname": "David Clark"
+      },
+      "labels": [
+          "critical",
+          "need-CR"
+      ]
+  },
+  {
+      "_id": "stu901",
+      "title": "Server Error During Save",
+      "description": "Encountered a server error when attempting to save.",
+      "severity": 1,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "k75a1l",
+          "fullname": "Ori Chai Matan"
+      },
+      "labels": [
+          "dev-branch"
+      ]
+  },
+  {
+      "_id": "vwx234",
+      "title": "Delay in Saving Data",
+      "description": "Significant delay observed between clicking 'Save' and data actually being saved.",
+      "severity": 2,
+      "createdAt": 1542107359454,
+      "owner": {
+          "_id": "k75a1l",
+          "fullname": "Ori Chai Matan"
+      },
+      "labels": [
+          "need-CR",
+          "dev-branch"
+      ]
+  }
+]

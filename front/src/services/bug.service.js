@@ -27,14 +27,16 @@ async function get(bugId) {
 }
 
 async function remove(bugId) {
-    return axios.delete(BASE_URL + bugId)
+    const url = BASE_URL + bugId
+    var { data: res } = await axios.delete(url)
+    return res
 }
 
 async function save(bug) {
     const method = bug._id ? 'put' : 'post'
     // const queryParams = `?_id=${bug._id || ''}&title=${bug.title}&severity=${bug.severity}&description=${bug.description || ''}&createdAt=${bug.createdAt || ''}`
     // const { data: savedBug } = await axios.get(BASE_URL + 'save' + queryParams)
-    const { data: savedBug } = await axios[method](BASE_URL + (bug._id || ''), bug)
+    const { data: savedBug } = await axios[method](BASE_URL, bug)
     return savedBug
 }
 

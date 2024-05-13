@@ -28,7 +28,6 @@ export function BugIndex() {
   async function onRemoveBug(bugId) {
     try {
       await bugService.remove(bugId)
-      console.log('Deleted Succesfully!')
       setBugs(prevBugs => prevBugs.filter((bug) => bug._id !== bugId))
       showSuccessMsg('Bug removed')
     } catch (err) {
@@ -74,6 +73,10 @@ export function BugIndex() {
   function onSetFilterBy(filterBy) {
     setFilterBy(prevFilter => ({ ...prevFilter, ...filterBy }))
   }
+
+  function onChangePageIdx(pageIdx) {
+    setFilterBy(prevFilter => ({ ...prevFilter, pageIdx }))
+}
 
   return (
     <main className="bug-index">

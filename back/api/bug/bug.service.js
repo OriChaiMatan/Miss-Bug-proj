@@ -63,7 +63,7 @@ async function getById(bugId) {
 }
 
 
-async function remove(bugId) {
+async function remove(bugId, loggedinUser) {
     try {
         const bugIdx = bugs.findIndex(bug => bug._id === bugId)
         if (bugIdx === -1) throw `Cannot find bug with _id ${bugId}`
@@ -79,7 +79,7 @@ async function remove(bugId) {
 }
 
 
-async function save(bugToSave) {
+async function save(bugToSave, loggedinUser) {
     try {
         if (bugToSave._id) {
             const idx = bugs.findIndex(bug => bug._id === bugToSave._id)

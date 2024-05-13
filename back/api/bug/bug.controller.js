@@ -26,7 +26,7 @@ export async function getBug(req, res) {
         res.cookie('visitedBugs', visitedBugs, { maxAge: 7 * 1000 })
 
         const bug = await bugService.getById(bugId)
-        console.log('bug:', bug)
+        // console.log('bug:', bug)
         res.send(bug)
     } catch (err) {
         loggerService.error(`Cannot get bug`, err)
@@ -35,9 +35,13 @@ export async function getBug(req, res) {
 }
 
 export async function removeBug(req, res) {
+    
+    const {bugId} = req.params
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send('Not authenticated')
+
     try {
-        const bugId = req.params.bugId
-        await bugService.remove(bugId)
+        await bugService.remove(bugId, loggedinUser)
         res.send('deleted')
     } catch (err) {
         loggerService.error(`Cannot remove bug`, err)
@@ -49,9 +53,12 @@ export async function updateBug(req, res){
     const { _id, title, severity, description, labels } = req.body 
     let bugToSave = { _id, title, severity: +severity, description, labels }
 
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send('Not authenticated')
+
     try {
-        bugToSave = await bugService.save(bugToSave)
-        res.send(bugToSave)
+        const savedBug = await bugService.save(bugToSave, loggedinUser)
+        res.send(savedBug)
     } catch (err) {
         loggerService.error(`Cannot save bug`, err)
         res.status(400).send(`Cannot save bug`)
@@ -61,9 +68,13 @@ export async function updateBug(req, res){
 export async function addBug(req, res){
     const { title, severity, description, labels } = req.body 
     let bugToSave = { title, severity: +severity, description, labels }
+    
+    const loggedinUser = authService.validateToken(req.cookies.loginToken)
+    if (!loggedinUser) return res.status(401).send('Not authenticated')
+
     try {
-        bugToSave = await bugService.save(bugToSave)
-        res.send(bugToSave)
+        const savedBug = await bugService.save(bugToSave, loggedinUser)
+        res.send(savedBug)
     } catch (err) {
         loggerService.error(`Cannot save bug`, err)
         res.status(400).send(`Cannot save bug`)

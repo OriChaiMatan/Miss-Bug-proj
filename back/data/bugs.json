@@ -16,21 +16,6 @@
         ]
     },
     {
-        "_id": "def456",
-        "title": "Title Does Not Match Issue",
-        "description": "The issue described does not match the title provided.",
-        "severity": 1,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "u101",
-            "fullname": "Muki Ja"
-        },
-        "labels": [
-            "need-CR",
-            "dev-branch"
-        ]
-    },
-    {
         "_id": "ghi789",
         "title": "Save Button Not Functioning",
         "description": "The 'Save' button does not perform the save action when clicked.",
@@ -46,24 +31,10 @@
         ]
     },
     {
-        "_id": "jkl012",
-        "title": "Data Loss Upon Save",
-        "description": "Saving data results in loss of previous data or unexpected behavior.",
-        "severity": 2,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "u108",
-            "fullname": "David Clark"
-        },
-        "labels": [
-            "need-CR"
-        ]
-    },
-    {
         "_id": "mno345",
         "title": "Save Button Missing",
         "description": "The 'Save' button is not present where expected.",
-        "severity": 2,
+        "severity": 111,
         "createdAt": 1542107359454,
         "owner": {
             "_id": "u108",
@@ -75,47 +46,14 @@
         ]
     },
     {
-        "_id": "pqr678",
-        "title": "Incorrect Data Saved",
-        "description": "Data saved does not match what was entered or expected.",
-        "severity": 3,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "u108",
-            "fullname": "David Clark"
-        },
-        "labels": [
-            "critical",
-            "need-CR"
-        ]
-    },
-    {
-        "_id": "stu901",
-        "title": "Server Error During Save",
-        "description": "Encountered a server error when attempting to save.",
-        "severity": 1,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "k75a1l",
-            "fullname": "Ori Chai Matan"
-        },
-        "labels": [
-            "dev-branch"
-        ]
-    },
-    {
-        "_id": "vwx234",
-        "title": "Delay in Saving Data",
-        "description": "Significant delay observed between clicking 'Save' and data actually being saved.",
+        "title": "333",
         "severity": 2,
-        "createdAt": 1542107359454,
+        "description": "333333333333",
+        "_id": "PcuZ4S",
         "owner": {
-            "_id": "k75a1l",
-            "fullname": "Ori Chai Matan"
+            "_id": "u101",
+            "fullname": "Muki Ja"
         },
-        "labels": [
-            "need-CR",
-            "dev-branch"
-        ]
+        "createdAt": 1715616885096
     }
 ]

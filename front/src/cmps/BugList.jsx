@@ -18,8 +18,8 @@ export function BugList({ bugs, onRemoveBug, onEditBug }) {
           <div>
             {isAllowed(bug) && <button onClick={() => { onRemoveBug(bug._id) }}>Remove Bug</button>}
             {isAllowed(bug) && <button onClick={() => { onEditBug(bug) }}>Edit Bug</button>}
+            <Link to={`/bug/${bug._id}`}>Details</Link>
           </div>
-          <Link to={`/bug/${bug._id}`}>Details</Link>
         </li>
       ))}
     </ul>

@@ -1,73 +1,91 @@
 [
     {
+        "_id": "1",
+        "fullname": "Admin",
+        "username": "admin",
+        "password": "admin",
+        "score": 1000,
+        "isAdmin": true
+    },
+    {
         "_id": "u101",
         "fullname": "Muki Ja",
         "username": "muki",
         "password": "muki1234",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u102",
         "fullname": "John Doe",
         "username": "john_doe",
         "password": "john123",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u103",
         "fullname": "Alice Smith",
         "username": "alice_s",
         "password": "alice456",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u104",
         "fullname": "Bob Johnson",
         "username": "bobby",
         "password": "bob123",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u106",
         "fullname": "Chris Evans",
         "username": "cevans",
         "password": "cevans123",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u107",
         "fullname": "Sophia Lee",
         "username": "sophia_lee",
         "password": "sophia123",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u108",
         "fullname": "David Clark",
         "username": "dave_c",
         "password": "dave456",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u109",
         "fullname": "Emma Watson",
         "username": "emma_w",
         "password": "emma123",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "u110",
         "fullname": "Michael Davis",
         "username": "mike_d",
         "password": "mike456",
-        "score": 1000
+        "score": 1000,
+        "isAdmin": false
     },
     {
         "_id": "k75a1l",
         "fullname": "Ori Chai Matan",
         "username": "ori_chaimatan",
         "password": "111111",
-        "score": 1234321
+        "score": 1234321,
+        "isAdmin": false
     },
     {
         "username": "OriChaiMatan",
@@ -75,6 +93,7 @@
         "fullname": "אורי חי מתן",
         "_id": "2k6nYl",
         "score": 10000,
-        "createdAt": 1715609839641
+        "createdAt": 1715609839641,
+        "isAdmin": false
     }
 ]

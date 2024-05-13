@@ -14,7 +14,7 @@ export async function getUser(req, res) {
     try {
         const userId = req.params.userId
         const user = await userService.getById(userId)
-        console.log('user:', user)
+        // console.log('user:', user)
         res.send(user)
     } catch (err) {
         loggerService.error(`Cannot get user`, err)
