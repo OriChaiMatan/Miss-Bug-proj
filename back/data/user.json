@@ -68,5 +68,13 @@
         "username": "ori_chaimatan",
         "password": "111111",
         "score": 1234321
+    },
+    {
+        "username": "OriChaiMatan",
+        "password": "$2b$10$2aHtqMJKWobov6y2ZDREeOsyM6znC5nAbr2gr3SjrkFM86TthMSxi",
+        "fullname": "אורי חי מתן",
+        "_id": "2k6nYl",
+        "score": 10000,
+        "createdAt": 1715609839641
     }
 ]

@@ -7,7 +7,7 @@
         "createdAt": 1542107359454,
         "owner": {
             "_id": "u101",
-            "fullname": "Puki Ja"
+            "fullname": "Muki Ja"
         },
         "labels": [
             "critical",
@@ -23,7 +23,7 @@
         "createdAt": 1542107359454,
         "owner": {
             "_id": "u101",
-            "fullname": "Puki Ja"
+            "fullname": "Muki Ja"
         },
         "labels": [
             "need-CR",
@@ -37,8 +37,8 @@
         "severity": 3,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "u102",
+            "fullname": "John Doe"
         },
         "labels": [
             "critical",
@@ -52,8 +52,8 @@
         "severity": 2,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "u108",
+            "fullname": "David Clark"
         },
         "labels": [
             "need-CR"
@@ -66,8 +66,8 @@
         "severity": 2,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "u108",
+            "fullname": "David Clark"
         },
         "labels": [
             "need-CR",
@@ -81,8 +81,8 @@
         "severity": 3,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "u108",
+            "fullname": "David Clark"
         },
         "labels": [
             "critical",
@@ -96,8 +96,8 @@
         "severity": 1,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "k75a1l",
+            "fullname": "Ori Chai Matan"
         },
         "labels": [
             "dev-branch"
@@ -110,8 +110,8 @@
         "severity": 2,
         "createdAt": 1542107359454,
         "owner": {
-            "_id": "u101",
-            "fullname": "Puki Ja"
+            "_id": "k75a1l",
+            "fullname": "Ori Chai Matan"
         },
         "labels": [
             "need-CR",
