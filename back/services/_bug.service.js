@@ -13,8 +13,8 @@ export const _bugService = {
 async function query() {
     try {
         return bugs
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 
@@ -22,8 +22,8 @@ async function getById(bugId) {
     try {
         const bug = bugs.find(bug => bug._id === bugId)
         return bug
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 
@@ -33,9 +33,9 @@ async function remove(bugId) {
         const bugIdx = bugs.findIndex(bug => bug._id === bugId)
         bugs.splice(bugIdx, 1)
         _saveBugsToFile()
-    } catch (error) {
-        console.log('error', error)
-        throw error
+    } catch (err) {
+        console.log('error', err)
+        throw err
     }
 }
 
@@ -54,8 +54,8 @@ async function save(bugToSave) {
         }
         await _saveBugsToFile()
         return bugToSave
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 

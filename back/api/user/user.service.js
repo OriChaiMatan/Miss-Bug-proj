@@ -16,8 +16,8 @@ export const userService = {
 async function query() {
     try {
         return users
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 

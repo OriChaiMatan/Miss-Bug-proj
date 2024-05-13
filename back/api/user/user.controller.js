@@ -4,9 +4,9 @@ export async function getUsers(req, res){
     try {
         const users = await userService.query()
         res.send(users)
-    } catch (error) {
-        loggerService.error(`Could'nt get users`, error)
-        res.status(400).send(`Could'nt get users`)
+    } catch (err) {
+        loggerService.error(`Cannot get users`, err)
+        res.status(400).send(`Cannot get users`)
     }
 }
 
@@ -16,9 +16,9 @@ export async function getUser(req, res) {
         const user = await userService.getById(userId)
         console.log('user:', user)
         res.send(user)
-    } catch (error) {
-        loggerService.error(`Could'nt get user`, error)
-        res.status(400).send(`Could'nt get user`)
+    } catch (err) {
+        loggerService.error(`Cannot get user`, err)
+        res.status(400).send(`Cannot get user`)
     }
 }
 
@@ -27,9 +27,9 @@ export async function removeUser(req, res) {
         const userId = req.params.userId
         await userService.remove(userId)
         res.send('deleted')
-    } catch (error) {
-        loggerService.error(`Could'nt remove user`, error)
-        res.status(400).send(`Could'nt remove user`)
+    } catch (err) {
+        loggerService.error(`Cannot remove user`, err)
+        res.status(400).send(`Cannot remove user`)
     }
 }
 
@@ -40,9 +40,9 @@ export async function updateUser(req, res){
     try {
         userToSave = await userService.save(userToSave)
         res.send(userToSave)
-    } catch (error) {
-        loggerService.error(`Could'nt save user`, error)
-        res.status(400).send(`Could'nt save user`)
+    } catch (err) {
+        loggerService.error(`Cannot save user`, err)
+        res.status(400).send(`Cannot save user`)
     }
 }
 
@@ -52,8 +52,8 @@ export async function addUser(req, res){
     try {
         userToSave = await userService.save(userToSave)
         res.send(userToSave)
-    } catch (error) {
-        loggerService.error(`Could'nt save user`, error)
-        res.status(400).send(`Could'nt save user`)
+    } catch (err) {
+        loggerService.error(`Cannot save user`, err)
+        res.status(400).send(`Cannot save user`)
     }
 }

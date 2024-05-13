@@ -80,6 +80,7 @@ export function BugIndex() {
       <h3>Bugs App</h3>
       <main>
         <BugFilter filterBy={filterBy} onSetFilterBy={debouncedSetFilterBy} />
+        <h1>ddddddddddddddddddddddddddddddddddddddddddddddddddd</h1>
         <button className='add-btn' onClick={onAddBug}>Add Bug ⛐</button>
         <BugList bugs={bugs} onRemoveBug={onRemoveBug} onEditBug={onEditBug} />
       </main>

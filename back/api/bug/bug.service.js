@@ -48,8 +48,8 @@ async function query(filterBy = {}) {
         
 
         return filteredBugs
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 
@@ -57,8 +57,8 @@ async function getById(bugId) {
     try {
         const bug = bugs.find(bug => bug._id === bugId)
         return bug
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 
@@ -68,8 +68,8 @@ async function remove(bugId) {
         const bugIdx = bugs.findIndex(bug => bug._id === bugId)
         bugs.splice(bugIdx, 1)
         _saveBugsToFile()
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 
@@ -86,8 +86,8 @@ async function save(bugToSave) {
         }
         await _saveBugsToFile()
         return bugToSave
-    } catch (error) {
-        throw error
+    } catch (err) {
+        throw err
     }
 }
 

@@ -10,9 +10,9 @@ export async function getBugs(req, res){
         const loggedinUser = authService.validateToken(req.cookies.loginToken)
         const bugs = await bugService.query(filterBy)
         res.send(bugs)
-    } catch (error) {
-        loggerService.error(`Could'nt get bugs`, error)
-        res.status(400).send(`Could'nt get bugs`)
+    } catch (err) {
+        loggerService.error(`Cannot get bugs`, err)
+        res.status(400).send(`Cannot'nt get bugs`)
     }
 }
 
@@ -28,9 +28,9 @@ export async function getBug(req, res) {
         const bug = await bugService.getById(bugId)
         console.log('bug:', bug)
         res.send(bug)
-    } catch (error) {
-        loggerService.error(`Could'nt get bug`, error)
-        res.status(400).send(`Could'nt get bug`)
+    } catch (err) {
+        loggerService.error(`Cannot get bug`, err)
+        res.status(400).send(`Cannot get bug`)
     }
 }
 
@@ -39,9 +39,9 @@ export async function removeBug(req, res) {
         const bugId = req.params.bugId
         await bugService.remove(bugId)
         res.send('deleted')
-    } catch (error) {
-        loggerService.error(`Could'nt remove bug`, error)
-        res.status(400).send(`Could'nt remove bug`)
+    } catch (err) {
+        loggerService.error(`Cannot remove bug`, err)
+        res.status(400).send(`Cannot remove bug`)
     }
 }
 
@@ -52,9 +52,9 @@ export async function updateBug(req, res){
     try {
         bugToSave = await bugService.save(bugToSave)
         res.send(bugToSave)
-    } catch (error) {
-        loggerService.error(`Could'nt save bug`, error)
-        res.status(400).send(`Could'nt save bug`)
+    } catch (err) {
+        loggerService.error(`Cannot save bug`, err)
+        res.status(400).send(`Cannot save bug`)
     }
 }
 
@@ -64,8 +64,8 @@ export async function addBug(req, res){
     try {
         bugToSave = await bugService.save(bugToSave)
         res.send(bugToSave)
-    } catch (error) {
-        loggerService.error(`Could'nt save bug`, error)
-        res.status(400).send(`Could'nt save bug`)
+    } catch (err) {
+        loggerService.error(`Cannot save bug`, err)
+        res.status(400).send(`Cannot save bug`)
     }
 }
