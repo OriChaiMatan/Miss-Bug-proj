@@ -3,7 +3,7 @@
         "_id": "abc123",
         "title": "Duplicate ID Detected",
         "description": "The _id 'abc123' already exists in the database.",
-        "severity": 2,
+        "severity": 4,
         "createdAt": 1542107359454,
         "owner": {
             "_id": "u101",
@@ -16,25 +16,10 @@
         ]
     },
     {
-        "_id": "ghi789",
-        "title": "Save Button Not Functioning",
-        "description": "The 'Save' button does not perform the save action when clicked.",
-        "severity": 3,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "u102",
-            "fullname": "John Doe"
-        },
-        "labels": [
-            "critical",
-            "dev-branch"
-        ]
-    },
-    {
         "_id": "mno345",
         "title": "Save Button Missing",
         "description": "The 'Save' button is not present where expected.",
-        "severity": 111,
+        "severity": 1111111111111,
         "createdAt": 1542107359454,
         "owner": {
             "_id": "u108",
@@ -44,16 +29,5 @@
             "need-CR",
             "dev-branch"
         ]
-    },
-    {
-        "title": "333",
-        "severity": 2,
-        "description": "333333333333",
-        "_id": "PcuZ4S",
-        "owner": {
-            "_id": "u101",
-            "fullname": "Muki Ja"
-        },
-        "createdAt": 1715616885096
     }
 ]
