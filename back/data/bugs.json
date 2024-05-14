@@ -29,5 +29,377 @@
             "need-CR",
             "dev-branch"
         ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "abc123",
+        "title": "Duplicate ID Detected",
+        "description": "The _id 'abc123' already exists in the database.",
+        "severity": 4,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u101",
+            "fullname": "Muki Ja"
+        },
+        "labels": [
+            "critical",
+            "need-CR",
+            "dev-branch"
+        ]
+    },
+    {
+        "_id": "mno345",
+        "title": "Save Button Missing",
+        "description": "The 'Save' button is not present where expected.",
+        "severity": 1111111111111,
+        "createdAt": 1542107359454,
+        "owner": {
+            "_id": "u108",
+            "fullname": "David Clark"
+        },
+        "labels": [
+            "need-CR",
+            "dev-branch"
+        ]
     }
 ]
