@@ -1,39 +1,52 @@
 import { useState } from 'react'
 import { userService } from '../services/user.service.js'
-import { showErrorMsg } from '../services/event-bus.service.js'
-import { useParams } from 'react-router'
+import { bugService } from '../services/bug.service.js'
+import { BugPreview } from '../cmps/BugPreview.jsx'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 
 export function UserDetails() {
 
-    const [user, setUser] = useState(null)
-    const { userId } = useParams()
+    const [bugs, setBugs] = useState([])
+    const loggedinUser = userService.getLoggedinUser()
 
     useEffect(() => {
-        loadUser()
-    }, [])
-
-    async function loadUser() {
+        fetchData()
+      }, [])
+    
+      async function fetchData() {
         try {
-            const user = await userService.get(userId)
-            setUser(user)
+          const bugs = await bugService.query()
+          setBugs(bugs)
         } catch (err) {
-            showErrorMsg('Cannot load user')
-
+          console.log('err:', err)
         }
+      }
+
+    function isAllowed(bug) {
+        return (bug.owner && bug.owner._id === loggedinUser?._id) || loggedinUser?.isAdmin
     }
+    const filteredBugs = bugs.filter(isAllowed)
 
-    if (!user) return <h1>loadings....</h1>
-    return <div className="user-details container">
-        <h3>User Details</h3>
-        <h4>{user.username}</h4>
-        <p>Fullname: <span>{user.fullname}</span></p>
-        <p>Score: <span>{user.score}</span></p>
-
-        <Link to="/user">Back to List</Link>
-    </div>
+    return (
+        <section>
+            <h1>Username: {loggedinUser.fullname}</h1>
+            <h2>My Bug-list:</h2>
+            <ul className="bug-list">
+                {filteredBugs.map((bug) => (
+                     <li className="bug-preview" key={bug._id}>
+                        <BugPreview bug={bug} />
+                        <div>
+                            <button onClick={() => { onRemoveBug(bug._id) }}>Remove Bug</button>
+                            <button onClick={() => { onEditBug(bug) }}>Edit Bug</button>
+                        </div>
+                        <Link to={`/bug/${bug._id}`}>Details</Link>
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )
 
 }
 
