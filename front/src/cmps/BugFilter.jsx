@@ -51,7 +51,7 @@ export function BugFilter({ filterBy, onSetFilterBy }) {
 
                 <label htmlFor="label">Label: </label>
                 <select value={label} onChange={handleChange} id="label" name="label">
-                    <option value="all">All</option>
+                    <option value="all">Choose label</option>
                     <option value="critical">Critical</option>
                     <option value="need-CR">Need-CR</option>
                     <option value="dev-branch">Dev-branch</option>

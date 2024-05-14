@@ -17,7 +17,7 @@ export function BugList({ bugs, onRemoveBug, onEditBug }) {
           <BugPreview bug={bug} />
           <div>
             {isAllowed(bug) && <button onClick={() => { onRemoveBug(bug._id) }}>Remove Bug</button>}
-            {isAllowed(bug) && <button onClick={() => { onEditBug(bug) }}>Edit Bug</button>}
+            {isAllowed(bug) && <button><Link to={`/bug/edit/${bug._id}`}>Edit Bug</Link></button>}
           </div>
           <Link to={`/bug/${bug._id}`}>Details</Link>
         </li>

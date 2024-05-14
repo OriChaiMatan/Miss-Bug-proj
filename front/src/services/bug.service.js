@@ -13,7 +13,8 @@ export const bugService = {
     get,
     save,
     remove,
-    getDefaultFilter
+    getDefaultFilter,
+    getEmptyBug
 }
 
 
@@ -42,4 +43,8 @@ async function save(bug) {
 
 function getDefaultFilter() {
     return { title: '', severity: '', label: '', sortBy: '' }
+}
+
+function getEmptyBug(title = '', description = '', severity = '', labels = []) {
+    return {  title, description, severity, labels  }
 }
