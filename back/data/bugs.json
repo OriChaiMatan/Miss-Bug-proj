@@ -32,22 +32,6 @@
         ]
     },
     {
-        "_id": "ac123",
-        "title": "Duplicate ID Detected",
-        "description": "The _id 'abc123' already exists in the database.",
-        "severity": 4,
-        "createdAt": 1542107359454,
-        "owner": {
-            "_id": "u101",
-            "fullname": "Muki Ja"
-        },
-        "labels": [
-            "critical",
-            "need-CR",
-            "dev-branch"
-        ]
-    },
-    {
         "_id": "mno34",
         "title": "Save Button Missing",
         "description": "The 'Save' button is not present where expected.",
